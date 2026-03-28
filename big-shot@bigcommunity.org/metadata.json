@@ -1,0 +1,10 @@
+{
+    "name": "Big Shot",
+    "description": "Enhanced screenshot annotation and screencast recording for Cinnamon",
+    "uuid": "big-shot@bigcommunity.org",
+    "version": "260318",
+    "cinnamon-version": ["5.0", "5.2", "5.4", "5.6", "5.8", "6.0", "6.2", "6.4"],
+    "url": "https://github.com/big-comm/gnome-shell-big-shot",
+    "gettext-domain": "big-shot@bigcommunity.org",
+    "max-instances": "1"
+}

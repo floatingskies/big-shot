@@ -1,0 +1,102 @@
+/* Big Shot — Extension Stylesheet (Cinnamon port)
+ *
+ * Cinnamon uses GTK/CSS for its shell theming.  These rules target
+ * the St (Shell Toolkit) widgets added by this extension to the panel
+ * and any floating overlays.
+ *
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ */
+
+/* ===== Panel recording indicator ===== */
+.big-shot-indicator {
+    spacing: 6px;
+}
+
+.big-shot-indicator-timer {
+    font-weight: bold;
+    font-variant-numeric: tabular-nums;
+}
+
+/* ===== Recording pause indicator ===== */
+.big-shot-paused-icon {
+    color: #f9c440;
+}
+
+.big-shot-paused-timer {
+    color: #f9c440;
+}
+
+/* ===== Webcam overlay ===== */
+.big-shot-webcam-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+}
+
+/* ===== Floating toolbar (used when big-shot-ui embeds in the shell) ===== */
+.big-shot-edit-floating {
+    background-color: rgba(30, 30, 30, 0.85);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 6px 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.big-shot-edit-tool-btn {
+    border-radius: 8px;
+    padding: 3px;
+    min-width: 22px;
+    min-height: 22px;
+    color: #ffffff;
+}
+
+.big-shot-edit-tool-btn:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+.big-shot-edit-tool-btn:checked {
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.big-shot-edit-sep {
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.12);
+    margin: 2px 4px;
+}
+
+/* ===== Audio Toggle Buttons ===== */
+.big-shot-audio-button {
+    border-radius: 10px;
+    padding: 4px 10px;
+    spacing: 6px;
+}
+
+.big-shot-audio-button:checked {
+    background-color: rgba(53, 132, 228, 0.4);
+}
+
+/* ===== Crop Handles ===== */
+.big-shot-crop-handle {
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background-color: white;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+/* ===== Gradient Picker ===== */
+.big-shot-gradient-swatch {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+}
+
+.big-shot-gradient-swatch:hover {
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.big-shot-gradient-swatch:checked {
+    border-color: rgba(255, 255, 255, 0.8);
+}
