@@ -1,0 +1,24 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Big Shot UI — Standalone GTK4 screenshot/screencast UI for Cinnamon
+Entry point. Parses CLI args and launches the application.
+
+Usage:
+    big-shot-ui [--mode=screenshot|area|window|screencast]
+
+SPDX-License-Identifier: GPL-2.0-or-later
+"""
+
+import sys
+import os
+
+# Allow running from the source directory
+_here = os.path.dirname(os.path.realpath(__file__))
+sys.path.insert(0, _here)
+
+from big_shot_app import BigShotApplication
+
+if __name__ == '__main__':
+    app = BigShotApplication()
+    sys.exit(app.run(sys.argv))
